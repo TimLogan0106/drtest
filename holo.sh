@@ -15,7 +15,7 @@ sudo qemu-system-x86_64 \
   -device usb-ehci,id=usb,bus=pci.0,addr=0x4 \
   -device usb-tablet \
   -vnc :0 \
-  -cpu Cooperlake-v1 \
+  -cpu core2duo \
   -smp cores=4 \
   -device rtl8139,netdev=n0 -netdev user,id=n0 \
   -accel tcg,thread=multi \
